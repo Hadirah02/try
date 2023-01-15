@@ -1,0 +1,342 @@
+<html>
+<head>
+<link href="asset/css/style.css" rel="stylesheet">
+<title>FAQS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+<div class="full-height">
+<center> 
+<section class="heading">
+     <div class="container">
+        <div class="row">
+            <div class="home-text">
+                 
+                 <p class="animate-text">
+                    <span>Guarantee save for your skin.</span>
+                    <span>Dermatologically tested & proven.</span>
+                    <span>Based on natural ingredients.</span>
+                 </p>
+            </div>
+        </div>
+     </div>
+ </section>
+
+
+
+<script>
+         const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+   
+</script>
+</div>
+
+<br>
+
+<img src="asset/image/logo.png"width="15%" >
+
+<marquee width="73%" direction=right height="100px" scrollamount="12">
+<p style="font-family:georgia; font-size:40px">Love Your Skin with True Beauty!</p>
+</marquee>
+
+
+<div class="rightnav">
+<a href= "Store.html" > <img src="asset/image/shop.png" width="40px" height="40px"></a>
+<a href= "Help.html" > <img src="asset/image/help1.png" width="35px" height="35px"></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"><img src="asset/image/feedback2.png"width="35px" height="35px"></a> 
+</div>
+
+
+
+
+
+<br><br>
+
+<div class="navbar">
+  <div class="topnav">
+  <a class="active" 
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutus.html">About us</a>
+      <a href="vision.html">Vision,Mission,Objective</a>
+      <a href="organizational.html">Organizational Chart</a>
+    </div>
+    </div>
+  <a href="Product.html">Product</a>
+  <a href="Contact.html">Contact</a> 
+  </div> 
+</div>
+</div>
+
+
+<center>
+<p class="main3">PRODUCTS</font></p>
+</center>
+
+<center>
+<div class="row1">
+  <div class="column1" onclick="openTab('b1');" style="background:#CC9999;">
+    <p>WHICH SKIN TYPES ARE TRUE BEAUTY PRODUCTS SUITABLE FOR?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b2');" style="background:#E6CCCC;">
+    <p>ARE TRUE BEAUTY SKINCARE PRODUCTS VEGAN OR CRUELTY FREE?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b3');" style="background:#CC9999;">
+   <p>ARE ALL TRUE BEAUTY SKINCARE PRODUCTS FRAGRANCE FREE?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b4');" style="background:#E6CCCC;">
+   <p>ARE TRUE BEAUTY SKINCARE PRODUCTS PREGNANCY SAFE?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b5');" style="background:#CC9999;">
+   <p>ARE TRUE BEAUTY SKINCARE PRODUCTS CLEAN?</p>
+  </div>
+
+</div>
+
+
+</center>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><B>WHICH SKIN TYPES ARE TRUE BEAUTY PRODUCTS SUITABLE FOR?</B></h2>
+  <ul>
+  <li>All True Beauty products are developed in partnership with dermatologists and chemists. They are formulated and suitable for all skin types :) 
+      Full ingredient lists are available on each product page and for any concerns, we recommend conducting a patch test or sharing our ingredient 
+      list with your healthcare provider before usage.
+  </li>
+  </ul>
+  </div>
+
+
+<div id="b2" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><B>ARE TRUE BEAUTY SKINCARE PRODUCTS VEGAN OR CRUELTY FREE?</B></h2>
+  <ul>
+  <li>Yes. All True Beauty products are vegan, cruelty-free, and certified by Kementerian Kesihatan Malaysia (KKM).</li>
+  </ul>
+  </div>
+
+
+<div id="b3" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> <b>ARE ALL TRUE BEAUTY SKINCARE PRODUCTS FRAGRANCE FREE? </b></h2>
+  <ul>
+  <li>Yes, all True Beauty products are available without fragrance.</li>
+  </ul>
+  </div>
+
+
+<div id="b4" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> <b>ARE TRUE BEAUTY SKINCARE PRODUCTS PREGNANCY SAFE? </b></h2>
+  <ul>
+  <li>Though nothing in our formula has been identified as unsafe for pregnant or breastfeeding persons, we recommend sharing our ingredient list with your providers for review before usage.</li>
+  </ul>
+  </div>
+
+<div id="b5" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> <b>ARE TRUE BEAUTY SKINCARE PRODUCTS CLEAN?</b></h2>
+  <ul>
+  <li>True Beauty products are formulated with high global standards. Though we are direct-to-consumer, our ingredient lists are in line with the clean standards specified by third-party retailers such as Sephora and ULTA.</li>
+  </ul>
+  </div>
+
+
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+
+
+
+
+<center>
+<p class="main3">SHIPPING</font></p>
+</center>
+
+<center>
+<div class="row1">
+  <div class="column1" onclick="openTab('b6');" style="background:#CC9999;">
+    <p>HOW LONG WILL MY ORDER TAKE TO ARRIVE?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b7');" style="background:#E6CCCC;">
+    <p>HOW MUCH IS SHIPPING?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b8');" style="background:#CC9999;">
+   <p>WHERE DO YOU SHIP?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b9');" style="background:#E6CCCC;">
+   <p>DO YOU SHIP INTERNATIONALLY?</p>
+  </div>
+
+  <div class="column1" onclick="openTab('b10');" style="background:#CC9999;">
+   <p>I'M EXPERIENCING ORDER ISSUES. HAS MY ORDER SHIPPED?</p>
+  </div>
+
+</div>
+
+
+</center>
+<!-- Full-width columns: (hidden by default) -->
+<div id="b6" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><B>HOW LONG WILL MY ORDER TAKE TO ARRIVE?</B></h2>
+  <ul>
+  <li>We process and ship orders M-F, excluding holidays. Please allow up to 3 business days for orders to be processed before shipping. 
+      Your order may take longer to ship if we're experiencing high order volume. You’ll get a notification and tracking number via email 
+      when a tracking number has been created. It may take a few days for tracking to show movement, depending on the carrier and delays they are experiencing.
+      On average, orders are delivered 5-7 business days after fulfillment. We are currently experiencing delays with order fuflillment and most orders should 
+      deliver within 7-10 business days. We are not responsible for any delays with carrier transit times.
+  </li>
+  </ul>
+  </div>
+
+
+<div id="b7" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2><B>HOW MUCH IS SHIPPING?</B></h2>
+  <ul>
+  <li>Standard Shipping, available for most domestic locations (3-7 business days after fulfillment) is RM8 for Peninsular Malaysia and RM15 for Sabah & Sarawak. Standard Shipping is free for all orders over RM200.</li>
+  </ul>
+  </div>
+
+
+<div id="b8" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> <b>WHERE DO YOU SHIP?</b></h2>
+  <ul>
+  <li>We ship to all states in Malaysia including Sabah & Sarawak.</li>
+  </ul>
+  </div>
+
+<div id="b9" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> <b>DO YOU SHIP INTERNATIONALLY?</b></h2>
+  <ul>
+  <li>Not at this time, but we’re aiming to be available internationally in the future!<br><br>
+      Please note: We do not support the use of freight forwarders. If you choose to place an order using a freight forwarder or third party international shipping service for 
+      packages to arrive to a country where we currently do not ship, we cannot guarantee any goods in your order will arrive properly, on time, or without potential damage. 
+      Additionally, we cannot accept returns or offer refunds for any items delivering to a freight forwarder or shipment locations other than our approved list of destinations.
+  </li>
+  </ul>
+  </div>
+
+
+<div id="b10" class="containerTab" style="display:none;background:#670c07">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2> <b>I'M EXPERIENCING ORDER ISSUES. HAS MY ORDER SHIPPED?</b></h2>
+  <ul>
+  <li>We are working hard to resolve the order issues many of you have experienced. Please know that if you placed an order anytime before 12/7, it has been collected from our warehouse
+      and is on its way to you: <br><br>
+
+      - Orders placed 11/22 were collected on or before 11/30. <br>
+      - Orders placed 11/25 through 11/30 were collected on or before 12/8.<br>
+      - Orders placed 12/1 through 12/7 were collected on or before 12/10.<br>
+  </li>
+  </ul>
+  </div>
+
+
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+
+
+<br><br><br><br>
+
+
+<br><br>
+<center>
+<a href="#MY_FIRST_ANCHOR"> <img src="asset/image/arrow.png" width="40px" heigh="40px"></a>
+</center>
+<br><br>
+
+
+
+<div class="footer">
+
+<br>
+
+<a href="FAQS.html"><b>FAQS</a>
+<a href="Shipping Information.html">Shipping Information</a>
+<a href="terms and policy.html">Terms and Policy</b></a>
+
+<br><br>
+
+<a href="https://www.instagram.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/ig.png" width="80px" height="80px"></a>  
+<a href= "https://wa.me/601126813552/" target="_blank"> <img src="asset/image/wa.png" width="80px" heigh="80px"></a>
+<a href= "https://www.facebook.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/fb.png" width="80px" height="80px"></a>
+
+<p class="main6"> © 2023 - True Beauty Sdn Bhd - All Rights Reserved </font></p>
+<hr>
+<p class="main6">STANDARD SHIPPING IS FREE FOR ALL ORDERS OVER RM200. <a href="product.html"><u><B>SHOP NOW</U></B></a></p>
+
+</body>
+
+
+</html>
+
+

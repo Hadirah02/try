@@ -1,0 +1,505 @@
+<html>
+<head>
+<link href="asset/css/style.css" rel="stylesheet">
+<title>product</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+<div class="full-height">
+<center> 
+<section class="heading">
+     <div class="container">
+        <div class="row">
+            <div class="home-text">
+                 
+                 <p class="animate-text">
+                    <span>Guarantee save for your skin.</span>
+                    <span>Dermatologically tested & proven.</span>
+                    <span>Based on natural ingredients.</span>
+                 </p>
+            </div>
+        </div>
+     </div>
+ </section>
+
+
+
+<script>
+         const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+   
+</script>
+</div>
+
+
+<br>
+
+<img src="asset/image/logo.png"width="15%" >
+
+<marquee width="73%" direction=right height="100px" scrollamount="12">
+<p style="font-family:georgia; font-size:40px">Love Your Skin with True Beauty!</p>
+</marquee>
+
+<div class="rightnav">
+<a href= "Store.html" > <img src="asset/image/shop.png" width="40px" height="40px"></a>
+<a href= "Help.html" > <img src="asset/image/help1.png" width="35px" height="35px"></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"><img src="asset/image/feedback2.png"width="35px" height="35px"></a> 
+</div>
+
+<br><br>
+
+<div class="navbar">
+  <div class="topnav">
+  <a class="active" 
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutus.html">About us</a>
+      <a href="vision.html">Vision,Mission,Objective</a>
+      <a href="organizational.html">Organizational Chart</a>
+    </div>
+    </div>
+  <a href="Product.html">Product</a>
+  <a href="Contact.html">Contact</a> 
+  </div> 
+</div>
+</div>
+
+
+<div class="bg-image"> </div>
+<div class="bg-text">
+<p class="main12">OUR PRODUCT</font></p>
+  <p><i>-True Beauty makes certain products that contain only the most effective, necessary raw ingredients, all of which have passed the safety standards of a dermatologist-branded skin care research lab.-</i></p>
+</div>
+
+<br><br>
+
+<center>
+<video width="100%" height="50%" autoplay loop muted>
+  <source src="asset/video/applying_product.mp4"type="video/mp4">
+</video>
+</center>
+
+<br><br>
+
+<div class="horizontal_line">
+</div>
+
+</div class="line">
+</div>
+
+
+<div class="patterns">
+  <svg width="100%" height="100%" font-color="maroon">
+   
+               
+ <text x="50%" y="50%"  text-anchor="middle"  >
+   CNY SPECIAL OFFERS!
+ </text>
+ </svg>
+</div>
+
+<center>
+<div class="geeks">
+        <img src="asset/image/cny.jpg" width="100%" >
+    </div>
+
+</center>
+
+<br>
+
+<center><div id="timer"></center></div>
+<script type="text/javascript">
+function updateTimer() {
+    future = Date.parse("january 22, 2023 00:00:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = days;
+    h = hours - days * 24;
+    m = mins - hours * 60;
+    s = secs - mins * 60;
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>Days</span></div>' +
+        '<div>' + h + '<span>Hours</span></div>' +
+        '<div>' + m + '<span>Minutes</span></div>' +
+        '<div>' + s + '<span>Seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
+</script>
+
+<div class="horizontal_line">
+</div>
+
+</div class="line">
+</div>
+
+<br><br>
+
+<center>
+<video width="100%" height="50%" autoplay loop muted>
+  <source src="asset/video/hands.mp4"type="video/mp4">
+</video>
+</center>
+
+<br>
+
+
+<center>
+<p class="main2"> SKINCARE TRIAL KIT </font></p>
+</center>
+<h3><center><i>Testing? Want to try find your first true beauty? </i></center></h3>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/set1.jpg" height="300" width="357">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Trial Kit</h1>
+        <h2>Volume: 1 set | RM80 </h2>
+        <p> 
+  -True Beauty Fresh Cleanser (50ml) x 1
+<br>
+  -True Beauty Rich Moist Soothing Cream (50ml) x 1
+<br>
+  -True Beauty Preparation Unscented Toner (100ml) x 1
+</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<br>
+
+<center><img src="asset/image/cruelty_dertmatology.png" width="15%"></center>
+
+
+<div class="horizontal_line">
+</div>
+
+</div class="line">
+</div>
+
+
+<br>
+
+<center>
+<p class="main2"> OILY SKIN </font></p>
+</center>
+
+<div class="wrapper">
+    <div class="product-img">
+<img src="asset/image/set2.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Oily Skin Set</h1>
+        <h2>Volume:1 set | RM150</h2>
+        <p> -1 Cleanser
+             <br>
+             -1 Serum
+              <br> 
+             -1 Toner
+             <br> 
+              -1 Mosturizer
+              <br> 
+               -1 Essence</p>
+      </div>
+     
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<br>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product1.0.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Brightening Serum</h1>
+        <h2>Volume:1 | 100ml| RM50</h2>
+        <p> Glycolid – renews skin surface and refines pore.
+           <br>
+             Salicylic acid – deeply unclogs pore and reduces sebum.
+                <br>
+                    LHA – exfoliate and stimulate skin renewal.</p>
+      </div>
+
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product2.0.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Oil Control Toner</h1>
+        <h2>Volume: 1 | 100ml | RM 30 </h2>
+        <p>Active Ingredients: Salicylic, glycolic, and lactic acids. </p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product3.0.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Energy Essence</h1>
+        <h2>Volume: 1| 50ml |  RM35 </h2>
+        <p>Formulated with antioxidant-rich fermented soybean extract and oil from Jeju Island helps to improve skin texture for a firmer, healthier looking skin.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product4.0.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Gel Mosturizer</h1>
+        <h2>Volume: 1| 60ml|  RM40</h2>
+        <p>This pore-clearing foam, formulated with Jeju volcanic clusters, helps remove oil and cleanse the pores.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product5.0.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Cleasing Foam</h1>
+        <h2>Volume: 1 | 150ml| RM38 </h2>
+        <p>Deep cleansing for pores and dead skin cells
+Formulated with salicylic acid to exfoliate and clean the pores inside and out.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+
+<center><img src="asset/image/cruelty_dertmatology.png" width="15%"></center>
+
+
+<div class="horizontal_line">
+</div>
+
+</div class="line">
+</div>
+
+<center>
+<p class="main2"> DRY SKIN </font></p>
+</center>
+
+<div class="wrapper">
+    <div class="product-img">
+<img src="asset/image/set3.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Hydrating Toner</h1>
+        <h2>Volume: 1 set | RM150 </h2>
+        <p>-1 Cleanser
+             <br>
+             -1 Mist Serum
+              <br> 
+             -1 Toner
+             <br> 
+              -1 Mosturizer
+              <br> 
+               -1 Lotion</p>
+
+      </div>
+
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<br>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product_1.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Hydrating Toner</h1>
+        <h2>Volume: 1 | 100ml | RM35 </h2>
+        <p>Formulated with gentle rose fruit extract, rosewater and rose flower oil this toner can soothe and nourish your skin, while the hyaluronic acid also does some heavy hydration lifting. </p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product_2.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Bank Hydro Mist</h1>
+        <h2>Volume: 1| 30ml | RM50 </h2>
+        <p>Infused with enriching Green Mineral Water from vegetables, the Laneige Water Bank Hydro Mist can fortify the skin barrier for healthy skin. It can also help charge the skin with the moisture it needs.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product_3.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Hydra Plus Moisturizer</h1>
+        <h2>Volume: 1 | 60ml | RM30 </h2>
+        <p> Lightweight moisturizer that has a combination of two hyaluronic acids that work together to hydrate the surface of the skin and the deeper layers of the epidermis for a full coverage of moisturization.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product_4.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Moist Cream Cleanser</h1>
+        <h2>Volume: 1| 150 ml | RM35 </h2>
+        <p>This cleanser exfoliates the skin by eliminating dirt and oil, particularly for people with dry, rough, bumpy skin that is also prone to acne. productnation.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<div class="wrapper">
+    <div class="product-img">
+      <img src="asset/image/product_5.jpg" height="300" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1> Soothing Lotion</h1>
+        <h2>Volume: 1| 110ml| RM50 </h2>
+        <p> Super gentle on the skin and is suitable to use on the face and body. Licorice extract and vitamin E that is contained in the formula helps to hydrate dry patches and eliminate any flakiness.</p>
+      </div>
+      <div class="product-price-btn">
+        <button type="button"><a href="https://wa.me/601126813552/" target="_blank">buy now</a></button>
+      </div>
+    </div>
+   </div>
+
+<center><img src="asset/image/cruelty_dertmatology.png" width="15%"></center>
+
+
+<br><br><br><br><br>
+
+
+<br><br>
+<center>
+<a href="#MY_FIRST_ANCHOR"> <img src="asset/image/arrow.png" width="40px" heigh="40px"></a>
+</center>
+<br><br>
+
+
+<div class="footer">
+
+<br>
+
+<a href="FAQS.html"><b>FAQS</a>
+<a href="Shipping Information.html">Shipping Information</a>
+<a href="terms and policy.html">Terms and Policy</b></a>
+
+<br><br>
+
+<a href="https://www.instagram.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/ig.png" width="80px" height="80px"></a>  
+<a href= "https://wa.me/601126813552/" target="_blank"> <img src="asset/image/wa.png" width="80px" heigh="80px"></a>
+<a href= "https://www.facebook.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/fb.png" width="80px" height="80px"></a>
+
+<p class="main6"> © 2023 - True Beauty Sdn Bhd - All Rights Reserved </font></p>
+<hr>
+<p class="main6">STANDARD SHIPPING IS FREE FOR ALL ORDERS OVER RM200. <a href="product.html"><u><B>SHOP NOW</U></B></a></p>
+
+</body>
+
+
+</html>
+
+

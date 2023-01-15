@@ -1,0 +1,296 @@
+<html>
+<head>
+<link href="asset/css/style.css" rel="stylesheet">
+<title>organizational chart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+<div class="full-height">
+<center> 
+<section class="heading">
+     <div class="container">
+        <div class="row">
+            <div class="home-text">
+                 
+                 <p class="animate-text">
+                    <span>Guarantee save for your skin.</span>
+                    <span>Dermatologically tested & proven.</span>
+                    <span>Based on natural ingredients.</span>
+                 </p>
+            </div>
+        </div>
+     </div>
+ </section>
+
+
+
+<script>
+         const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+   
+</script>
+</div>
+
+<br>
+
+<img src="asset/image/logo.png"width="15%" >
+
+<marquee width="73%" direction=right height="100px" scrollamount="12">
+<p style="font-family:georgia; font-size:40px">Love Your Skin with True Beauty!</p>
+</marquee>
+
+
+<div class="rightnav">
+<a href= "Store.html" > <img src="asset/image/shop.png" width="40px" height="40px"></a>
+<a href= "Help.html" > <img src="asset/image/help1.png" width="35px" height="35px"></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"><img src="asset/image/feedback2.png"width="35px" height="35px"></a> 
+</div>
+
+
+<br><br>
+
+<div class="navbar">
+  <div class="topnav">
+  <a class="active" 
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="aboutus.html">About us</a>
+      <a href="vision.html">Vision,Mission,Objective</a>
+      <a href="organizational.html">Organizational Chart</a>
+    </div>
+    </div>
+  <a href="Product.html">Product</a>
+  <a href="Contact.html">Contact</a> 
+  </div> 
+</div>
+</div>
+
+<br>
+<center>
+<p class="main3">ORGANIZATIONAL CHART</font></p>
+<div class="row">
+<center>
+  <div class="column">
+    <img src="asset/image/nasim.jpg" style="width:80%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      <h3>CHAIRWOMAN</h3>
+       <h4>NASIM HADIRAH BINTI NAZRI</h4>
+  </div>
+
+  <div class="column">
+    <img src="asset/image/aqilah.jpg" style="width:80%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      <h3>FINANCIAL MANAGER</h3>
+       <h4>NUR AQILAH BINTI ALI SHARIFF</h4>
+  </div>
+
+  <div class="column">
+    <img src="asset/image/syadni.jpg" style="width:80%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      <h3>MARKETING MANAGER</h3>
+       <h4>NURSYAMIMI SYADNI BINTI AHMAD NASIR</h4>
+  </div>
+
+  <div class="column">
+    <img src="asset/image/solihah.jpg" style="width:80%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      <h3>HUMAN RESOURCES</h3>
+       <h4>NURUL SOLIHAH BINTI A. SUKOR</h4>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <center>
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="asset/image/nasim.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="asset/image/aqilah.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="asset/image/syadni.jpg" style="width:50%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="asset/image/solihah.jpg" style="width:50%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="asset/image/nasim.jpg" style="width:50%" onclick="currentSlide(1)" alt="<h3>CHAIRWOMAN</h3>
+       <h4>NASIM HADIRAH BINTI NAZRI</h4>
+         <p>Responsible for making sure that each meeting is planned effectively, conducted according to the constitution and that matters are dealt with in an orderly, efficient manner.  The Chairwoman must make the most of all her committee members of True Beauty, building and leading the team.</p>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="asset/image/aqilah.jpg" style="width:50%" onclick="currentSlide(2)" 
+alt="<h3>FINANCIAL MANAGER</h3>
+       <h4>NUR AQILAH BINTI ALI SHARIFF</h4>
+         <p>A person who is responsible for taking care of all the essential financial functions of an organization.She also responsible for maintaining the right balance between equity and debt. The role of a financial manager is rapidly increasing due to advance technology which has significantly reduced the amount of time that was occupied to produce financial reports.</p>">
+    </div>
+
+<div class="column">
+      <img class="demo cursor" src="asset/image/syadni.jpg" style="width:50%" onclick="currentSlide(3)" 
+alt="<h3>MARKETING MANAGER</h3>
+       <h4>NURSYAMIMI SYADNI BINTI AHMAD NASIR</h4>
+         <p>Responsible for the planned and unplanned images of their employer. Planned images may include print or video advertisements, public speaking engagements, endorsements, and printed literature. Other than that, she also work with other team members to create both simple and complex advertising campaigns and determine the marketability of a new product or service.</p>">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="asset/image/solihah.jpg" style="width:50%" onclick="currentSlide(4)" 
+alt="<h3>HUMAN RESOURCES</h3>
+       <h4>NURUL SOLIHAH BINTI A. SUKOR</h4>
+         <p>Focus on the recruiting and retention of employees within a company. Human Resources typically finds, hires and fires, and trains employees. It oversees employee relations. It manages benefit programs. It is the place an employee goes with questions about their position at the company, to address concerns, and to air grievances.</p>">
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+
+
+<p class="main3">VALUES</font></p>
+
+<br><br><br>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <p>We are performance driven, through the lens of humanity.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <p>Being present, connecting with transparency, dignity and respect.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+     
+      <p>Delivering our very best in all we do, holding ourselves accountable for results.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      
+      <p>Acting with courage, challenging status quo and finding new ways to grow our company and each other.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<br><br><br><br><br><br><br>
+
+
+
+
+
+<div class="footer">
+
+<br>
+
+<a href="FAQS.html"><b>FAQS</a>
+<a href="Shipping Information.html">Shipping Information</a>
+<a href="terms and policy.html">Terms and Policy</b></a>
+
+<br><br>
+
+<a href="https://www.instagram.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/ig.png" width="80px" height="80px"></a>  
+<a href= "https://wa.me/601126813552/" target="_blank"> <img src="asset/image/wa.png" width="80px" heigh="80px"></a>
+<a href= "https://www.facebook.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/fb.png" width="80px" height="80px"></a>
+
+<p class="main6"> © 2023 - True Beauty Sdn Bhd - All Rights Reserved </font></p>
+<hr>
+<p class="main6">STANDARD SHIPPING IS FREE FOR ALL ORDERS OVER RM200. <a href="product.html"><u><B>SHOP NOW</U></B></a></p>
+
+</body>
+
+
+</html>

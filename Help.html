@@ -1,0 +1,171 @@
+<html>
+<head>
+<link href="asset/css/style.css" rel="stylesheet">
+<title>help</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+</style>
+</head>
+
+
+<body>
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+<div class="full-height">
+<center> 
+<section class="heading">
+     <div class="container">
+        <div class="row">
+            <div class="home-text">
+                 
+                 <p class="animate-text">
+                    <span>Guarantee save for your skin.</span>
+                    <span>Dermatologically tested & proven.</span>
+                    <span>Based on natural ingredients.</span>
+                 </p>
+            </div>
+        </div>
+     </div>
+ </section>
+
+
+
+<script>
+         const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+   
+</script>
+</div>
+
+<br>
+
+<img src="asset/image/logo.png"width="15%" >
+
+<marquee width="73%" direction=right height="100px" scrollamount="12">
+<p style="font-family:georgia; font-size:40px">Love Your Skin with True Beauty!</p>
+</marquee>
+
+
+<div class="rightnav">
+<a href= "Store.html" > <img src="asset/image/shop.png" width="40px" height="40px"></a>
+<a href= "Help.html" > <img src="asset/image/help1.png" width="35px" height="35px"></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"><img src="asset/image/feedback2.png"width="35px" height="35px"></a> 
+</div>
+
+
+<br><br>
+
+<div class="navbar">
+  <div class="topnav">
+  <a class="active" 
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <a href="aboutus.html">About us</a>
+      <a href="vision.html">Vision,Mission,Objective</a>
+      <a href="organizational.html">Organizational Chart</a>
+    </div>
+    </div>
+  <a href="Product.html">Product</a>
+  <a href="Contact.html">Contact</a> 
+  </div> 
+</div>
+</div>
+
+
+<center>
+<p class="main3">NEED HELP?</font></p>
+</center>
+
+<div class="c">
+      <div class="d">
+        <img src="asset/image/help.png"width="300px" heigh="200px">
+      </div>
+      <div class="e">
+        <P>Please get in touch with any questions or comments and we'll be happy to help.</P><br
+<ul>
+  <li>Click<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"> here</a> to leave your feedback.</li>
+  <li><a href="mailto:truebeautyofficialhq@gmail.com" target="_blank"> Email:truebeautyofficialhq@gmail.com</a></li>
+  <li>Tel: 1700-81-9900</li>
+  <li><a href="FAQS.html">FAQS</a></li>
+  <li><a href="Shipping Information.html">Shipping Information</a></li>
+  <li><a href="Terms and Policy.html">Terms and Policy</a></li>
+</ul>
+
+<br><br>
+
+<p><b>Operating hours:</b><br><br><br>
+
+Monday to Friday: 9am – 6pm
+Saturday / Sunday / Public Holidays: Closed</p>
+</div>
+      </div>
+    </div>
+
+
+
+
+<br><br><br><br>
+
+<br><br>
+<center>
+<a href="#MY_FIRST_ANCHOR"> <img src="asset/image/arrow.png" width="40px" heigh="40px"></a>
+</center>
+<br><br>
+
+<div class="footer">
+
+<br>
+
+<a href="FAQS.html"><b>FAQS</a>
+<a href="Shipping Information.html">Shipping Information</a>
+<a href="terms and policy.html">Terms and Policy</b></a>
+
+<br><br>
+
+<a href="https://www.instagram.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/ig.png" width="80px" height="80px"></a>  
+<a href= "https://wa.me/601126813552/" target="_blank"> <img src="asset/image/wa.png" width="80px" heigh="80px"></a>
+<a href= "https://www.facebook.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/fb.png" width="80px" height="80px"></a>
+
+<p class="main6"> © 2023 - True Beauty Sdn Bhd - All Rights Reserved </font></p>
+<hr>
+<p class="main6">STANDARD SHIPPING IS FREE FOR ALL ORDERS OVER RM200. <a href="product.html"><u><B>SHOP NOW</U></B></a></p>
+
+</body>
+
+
+</html>
+
+

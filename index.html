@@ -1,0 +1,222 @@
+<html>
+<head>
+<link href="asset/css/style.css" rel="stylesheet">
+<title>home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+<div class="full-height">
+<center> 
+<section class="heading">
+     <div class="container">
+        <div class="row">
+            <div class="home-text">
+                 
+                 <p class="animate-text">
+                    <span>Guarantee save for your skin.</span>
+                    <span>Dermatologically tested & proven.</span>
+                    <span>Based on natural ingredients.</span>
+                 </p>
+            </div>
+        </div>
+     </div>
+ </section>
+
+
+
+<script>
+         const txts=document.querySelector(".animate-text").children,
+               txtsLen=txts.length;
+           let index=0;
+          const textInTimer=3000,
+                textOutTimer=2800;
+
+         function animateText() {
+            for(let i=0; i<txtsLen; i++){
+              txts[i].classList.remove("text-in","text-out");  
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function(){
+                txts[index].classList.add("text-out");              
+            },textOutTimer)
+
+            setTimeout(function(){
+
+              if(index == txtsLen-1){
+                  index=0;
+                }
+               else{
+                   index++;
+                 }
+                animateText();
+            },textInTimer); 
+         }
+         
+         window.onload=animateText;
+   
+</script>
+</div>
+
+<br>
+
+<img src="asset/image/logo.png"width="15%" >
+
+<marquee width="73%" direction=right height="100px" scrollamount="12">
+<p style="font-family:georgia; font-size:40px">Stay Healthy and Radiant With True Beauty!</p>
+</marquee>
+
+
+<div class="rightnav">
+<a href= "Store.html" > <img src="asset/image/shop.png" width="40px" height="40px"></a>
+<a href= "Help.html" > <img src="asset/image/help1.png" width="35px" height="35px"></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfyrHNsgSK8AVVaCs9SWORJbURFiUZp_yNYdJY5LUX7gw5TtQ/viewform" target="_blank"><img src="asset/image/feedback2.png"width="35px" height="35px"></a> 
+</div>
+
+
+<br><br>
+
+<div class="navbar">
+  <div class="topnav">
+  <a class="active" 
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+     <a href="aboutus.html">About Us </a>
+      <a href="vision.html">Vision,Mission,Objective</a>
+      <a href="organizational.html">Organizational Chart</a>
+    </div>
+    </div>
+  <a href="Product.html">Product</a>
+  <a href="Contact.html">Contact</a> 
+  </div> 
+</div>
+</div>
+
+
+<video width="100%"  autoplay loop muted>
+<source src="asset/video/homevd.mp4" type="video/mp4">
+</video></div></div>
+<center>
+
+
+<br><br>
+
+<div class="container">
+  <img class=profile src="asset/image/group.jpg" alt="group" style="width:50%" >   
+     <div class="text">
+         <p class="main2">What makes us your <b>true</b> beauty skincare<br><br></font></p>
+        <p class="main1">Together we’re building a safe,<br> welcoming space in beauty and beyond.<br> This is skincare made to feel good in,<br> without hiding what makes you unique.<br> And it’s all vegan and cruelty free.</font></p>
+     <button class="button"><a href="aboutus.html">About Us </a></button></center>
+      </div>
+    </div>
+
+<br><br><br><br><br>
+
+<div class="horizontal_line"></div>
+</div class="line"></div>
+
+<br><br>
+
+<center>
+
+<p class="main2">Product </font></p>
+<p class="main4">Range</font></p>
+<p class="main1">
+Here there are 3 sets of product options suitable for each skin type.
+Therefore, you can buy according to your skin type.<br>All skin types can benefit from daily cleansing and moisturizing, but different skin types—which include oily, dry, normal,<br> combination, and sensitive skin—have different needs. That’s why understanding your skin type is the first<br> step in properly caring for it. But how do you know what type of skin you have?<br> The answer can be found through simple observation.</font></p>
+
+</center>
+
+<br>
+
+<center>
+<button class="button"><a href="skintype.html">Identify Your Skin </a></button></center>
+</center>
+
+<br><br>
+
+<div class="row5">
+  <div class="column5">
+  
+    <img src="asset/image/oil.jpg" alt="oil" style="width:100%"> <p class="main7"><br><b>OILY SET </font></p>
+  </div>
+    
+<div class="column5">
+    
+    <img src="asset/image/trial1.jpg" alt="trial" style="width:100%"> <p class="main7"><br>TRIAL SET</font></p>
+  </div>
+
+<div class="column5">
+
+    <img src="asset/image/dry.jpg" alt="dry" style="width:100%"> <p class="main7"><br>DRY SET</b></font></p>
+  </div>
+</div>
+
+
+<br><br>
+
+<div class="horizontal_line"></div>
+</div class="line"></div>
+
+<br><br><br><br><br>
+
+<marquee direction=up scrollamount="3" autoplay>
+<img src="asset/image/e product.jpg"width="19.7%" >
+<img src="asset/image/a product.jpg"width="19.7%" >
+<img src="asset/image/b product.jpg"width="19.7%" >
+<img src="asset/image/c product.jpg"width="19.7%" >
+<img src="asset/image/d product.jpg"width="19.7%" >
+</marquee>
+<center>
+<p class="main2">There Are Variety Of Our Products.<br></font></p>
+<button class="button"><a href="Product.html">Product</a></button></center>
+</center>
+<br><br>
+<marquee direction=down scrollamount="3" autoplay>
+<img src="asset/image/g product.jpg"width="19.7%"  >
+<img src="asset/image/f product.jpg"width="19.7%"  >
+<img src="asset/image/i product.jpg"width="19.7%"  >
+<img src="asset/image/h product.jpg"width="19.7%"  >
+<img src="asset/image/j product.jpg"width="19.7%"  >
+</marquee>
+
+<br><br>
+<center>
+<a href="#MY_FIRST_ANCHOR"> <img src="asset/image/arrow.png" width="40px" heigh="40px"></a>
+</center>
+<br><br>
+
+
+
+<div class="footer">
+
+<br>
+
+<a href="FAQS.html"><b>FAQS</a>
+<a href="Shipping Information.html">Shipping Information</a>
+<a href="terms and policy.html">Terms and Policy</b></a>
+
+<br><br>
+
+<a href="https://www.instagram.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/ig.png" width="80px" height="80px"></a>  
+<a href= "https://wa.me/601126813552/" target="_blank"> <img src="asset/image/wa.png" width="80px" heigh="80px"></a>
+<a href= "https://www.facebook.com/truebeautyofficialhq/" target="_blank"> <img src="asset/image/fb.png" width="80px" height="80px"></a>
+
+<p class="main6"> © 2023 - True Beauty Sdn Bhd - All Rights Reserved </font></p>
+<hr>
+<p class="main6">STANDARD SHIPPING IS FREE FOR ALL ORDERS OVER RM200. <a href="product.html"><u><B>SHOP NOW</U></B></a></p>
+
+</body>
+
+
+</html>
+
+
